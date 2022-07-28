@@ -11,6 +11,18 @@ public class LineTest {
 		
 		
 		checkEuality(l1,l2);
+		LineComparison(l1,l2);
+	}
+
+	private static void LineComparison(Line l1, Line l2) {
+		// TODO Auto-generated method stub
+		if(l1.LengthOfLine()<l2.LengthOfLine())
+			System.out.println("Line l2 is longer");
+		else if(l1.LengthOfLine()>l2.LengthOfLine())
+			System.out.println("Line l1 is longer");
+		else
+			System.out.println("Two lines are equal");
+		
 	}
 
 	private static void checkEuality(Line l1, Line l2) {
